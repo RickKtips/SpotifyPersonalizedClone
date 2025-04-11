@@ -1,0 +1,19 @@
+@import 'variaveis';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: $cor-contraste;
+border: $border;
+section{
+padding:20px;
+  height: 190px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+h2{padding-left: 200px;}
+h3{font-size: 2em;padding-left: 200px;}
+}
+
+}

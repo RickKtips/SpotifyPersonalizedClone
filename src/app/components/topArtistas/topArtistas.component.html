@@ -1,0 +1,9 @@
+
+<h2>Top Artistas</h2>
+
+<app-artista-item-imagem 
+*ngFor="let artista of artistas" 
+[imagemSrc]="artista.imagemUrl"
+[artistaNone]="artista.nome"
+>
+</app-artista-item-imagem>

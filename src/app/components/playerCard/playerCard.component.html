@@ -1,0 +1,14 @@
+
+    <section [style.background-image]="'url(' + musica?.album.imagemUrl + ')'"></section>
+    <span>
+        {{ obterArtistas() }}
+    </span>
+    <p>
+        {{ musica.titulo }}
+    </p>
+<div>
+    <fa-icon [icon]="anteriorIcone" (click)="voltarMusica()"></fa-icon>   
+
+    <fa-icon [icon]="proximoIcone" (click)="proximaMusica()"></fa-icon>     
+</div>
+

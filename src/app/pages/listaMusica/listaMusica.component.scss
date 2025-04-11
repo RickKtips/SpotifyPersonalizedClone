@@ -1,0 +1,42 @@
+@import 'variaveis.scss';
+
+:host {
+display: flex;
+width:100%;
+height:100vh;
+flex-wrap: nowrap;
+}
+ 
+section{
+display: flex;
+flex-grow: 1;
+flex-direction: column;
+padding: 20px;
+
+h2{
+    color: $cor-contraste; margin: 20px 0 0;
+}
+div{
+  margin-top: 30px;
+    width: 100%;
+    height: calc(100vh - 280px);
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 10px;
+     
+    }
+  }
+table{
+  width: 100%;
+
+th{
+    font-weight: 700;
+    position: sticky;
+    top: 0; /* Don't forget this, required for the stickiness */
+}
+}
+}
+aside{
+
+}
+

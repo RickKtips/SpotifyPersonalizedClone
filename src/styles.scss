@@ -1,1 +1,138 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'variaveis.scss';
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $cor-fundo;
+}
+
+*{
+    font-family: "Julius Sans One", serif;
+    font-weight: 400;
+    font-style: normal;
+  box-sizing: border-box;
+}
+
+h2{
+font-weight: 700;
+margin:0 0 20px ;
+}
+
+
+.card{
+    background: $cor-secundaria;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.logo{
+    min-width: 50px;
+    min-height: 50px;
+    margin: 0;
+    display: flex;
+    background-image: $logo-principal;
+    background-size: contain;
+}
+
+button{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 30px;
+  border: none;
+  color: $cor-contraste;
+  font-size: 1em;
+  padding: 0 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 3px;
+
+  background: linear-gradient($cor-primaria 0 0) left / var(--p,0) no-repeat;
+  transition: .4s,background-position 0s;
+ gap:10px;
+ &.G{
+  height: 50px;
+  font-size: 1.2em;
+  padding: 0 20px;
+ }
+  &:hover{
+    --p: 100%;
+    background-position: right;
+  }
+  &.selecionado{
+    background: $cor-primaria;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.8em;
+  min-width: 400px;
+color: $cor-contraste;
+
+.executando{
+  background-color: $cor-contraste;
+  color: $cor-primaria;
+}
+  thead th {
+    background-color: $cor-primaria;
+    color: $cor-contraste;
+    text-align: left;
+  }
+
+  th,
+  td {
+      padding: 12px 15px;
+  }
+
+tbody
+{
+   tr {
+    border-bottom: 1px solid $cor-contraste;
+    &:nth-of-type(even) {
+      background-color: $cor-primaria;
+    }
+    &:last-of-type {
+      border-bottom: 2px solid $cor-primaria;
+    }
+    &:hover {
+      font-weight: bold;
+      background-color: $cor-primaria;
+    }
+  }
+}
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  &-thumb {
+    background: rgba($cor-primaria, 0.5);
+    border-radius: 10px;
+  }
+ &-track {
+    background: transparent;
+  } 
+}
+
+input[type=text]{
+  padding: 10px;
+  border-radius: 0;
+  border: 2px solid $cor-contraste;
+  color: $cor-primaria;
+  margin: 10px 0;
+  width: 100%;
+  outline: none;
+  font-size: 1.3em;
+  &:active, &:focus{
+    border: 2px solid $cor-primaria;
+  }
+  &::placeholder{
+    color: $cor-secundaria;
+    font-size: 1em;
+  }
+}

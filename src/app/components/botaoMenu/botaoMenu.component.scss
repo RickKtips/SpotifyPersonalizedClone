@@ -1,0 +1,17 @@
+@import 'variaveis';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+
+}
+
+span{
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

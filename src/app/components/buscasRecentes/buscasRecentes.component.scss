@@ -1,0 +1,17 @@
+@import 'variaveis';
+
+:host {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  width: 100%;
+gap: 10px;
+}
+span{padding: 5px; background-color: $cor-primaria; color: $cor-contraste;
+  cursor: pointer;
+&:hover{
+  background-color: rgba($cor-primaria, 0.4);
+}
+}
+
+
