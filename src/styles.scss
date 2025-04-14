@@ -92,7 +92,7 @@ color: $cor-contraste;
 
 tbody
 {
-   tr {
+   tr { cursor: pointer;
     border-bottom: 1px solid $cor-contraste;
     &:nth-of-type(even) {
       background-color: $cor-primaria;
